@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { LoginService } from '../../../shared/services';
-import { Customer, TokenPayload } from '../../../shared/services/customer/cusotmer';
+import { LoginService } from 'services';
+import { Customer, TokenPayload } from 'services';
 import { Router } from '@angular/router';
 
 @Component({
