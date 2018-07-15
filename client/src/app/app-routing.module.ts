@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/login';
+import { LoginComponent, RegisterComponent } from './modules/register-login';
+import { AuthGuardService } from './shared/services';
+import { ProfileComponent } from './modules/customer';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/login', pathMatch: 'full' },
+    { path: '', redirectTo: '/register', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
+    { path: 'profile', component: ProfileComponent, canActivate: [AuthGuardService] }
 
 ];
 

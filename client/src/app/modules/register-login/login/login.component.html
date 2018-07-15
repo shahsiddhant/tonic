@@ -1,15 +1,7 @@
 <div class="container">
-    <div class="row justify-content-between">
-        <div class="col-6">
-            Name: {{name}}
-        </div>
-        <div class="col-6">
-            <input type="text" [(ngModel)]="name">
-        </div>
-    </div>
     <div class="row">
         <div class="col-6">
-            Email: {{email}}
+            Email: {{currentCusotmer?.email}}
         </div>
         <div class="col-6">
             <input type="text" [(ngModel)]="email">
@@ -24,7 +16,10 @@
         </div>
     </div>
     <div class="row">
-        <button (click)="register()">Submit</button>
+        <button (click)="login()">Login</button>
     </div>
 
+    <div class="row">
+        <button [routerLink]="['/register']">Sign up</button>
+    </div>
 </div>
