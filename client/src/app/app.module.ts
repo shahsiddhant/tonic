@@ -11,7 +11,7 @@ import { ComponentsModule } from './shared/components';
 @NgModule({
   declarations: [
     AppComponent,
-    CreditCardComponent,
+    CreditCardComponent
   ],
   imports: [
     BrowserModule,
