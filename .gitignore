@@ -44,4 +44,4 @@ client/typings
 .DS_Store
 Thumbs.db
 
-server/env
+server/.env
