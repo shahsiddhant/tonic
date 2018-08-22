@@ -1,4 +1,21 @@
+@import '~sass/_variables';
 .nav-bar {
-    height: 50px;
-    background: red;
+    background: $white;
+    li {
+        display: inline;
+    }
+    button {
+        border: none;
+        font-size: 20px;
+        color: $gold;
+        border-bottom: 3px solid transparent;
+        background: none;
+    }
+    button:hover {
+        border-bottom: 3px solid $black;
+    }
+}
+
+.active-link {
+    border-bottom: 3px solid $black;
 }

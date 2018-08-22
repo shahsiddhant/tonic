@@ -1,9 +1,7 @@
-<div class="container-fluid nav-bar">
+<div class="container-fluid nav-bar px-0 pt-3 mb-3 text-right">
     <ul>
-        <li *ngFor="let item of routes">
-            <a [routerLink]="[item.route]">
-                {{item.routeName}}
-            </a>
+        <li *ngFor="let item of routes" class="mr-5" [routerLink]="[item.route]">
+            <button class="pb-3">{{item.routeName}}</button>
         </li>
     </ul>
 </div>
